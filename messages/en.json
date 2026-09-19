@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "title": "TechToJob — Developer and tech company community",
+    "description": "Connect with real tech opportunities. Publish your profile, find talent, and participate in development tournaments in Spanish."
+  },
+  "common": {
+    "joinDiscord": "Join the community",
+    "languageSwitcher": "Español"
+  },
+  "nav": {
+    "howItWorks": "How it works",
+    "talent": "Talent",
+    "companies": "Companies",
+    "tournaments": "Tournaments",
+    "community": "Community",
+    "news": "News",
+    "joinDiscord": "Join Discord",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "hero": {
+    "title": "The <teal>developer</teal> community that connects with <teal>tech companies</teal>",
+    "description": "Join projects, tournaments, and networking channels within our Discord. Show what you can do, build experience, and create connections so that IT job opportunities find you.",
+    "cta": "Join Discord"
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "step1": {
+      "title": "1. Join the community",
+      "description": "Join Discord instantly without registration forms. Explore channels, projects, and conversations that interest you most."
+    },
+    "step2": {
+      "title": "2. Participate and showcase your skills",
+      "description": "Share your projects, solve challenges, join tournaments, and take part in community conversations."
+    },
+    "step3": {
+      "title": "3. Let your work speak for you",
+      "description": "Your participation showcases how you work and what you can do. You don't need to wait for a job opening to start getting noticed."
+    },
+    "step4": {
+      "title": "4. Opportunities appear",
+      "description": "When a company searches for a profile like yours, they can find you within the community, see your work, and reach out directly."
+    }
+  }
+}
