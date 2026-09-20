@@ -62,3 +62,29 @@ body {
     transparent 62%
   );
 }
+
+@keyframes border-beam-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-border-beam {
+  animation: border-beam-spin 7.5s linear infinite;
+}
+
+.bg-border-beam {
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg 200deg,
+    rgba(132, 192, 191, 0.15) 230deg,
+    rgba(132, 192, 191, 0.6) 270deg,
+    #84c0bf 315deg,
+    #a3d4d3 342deg,
+    #ffffff 355deg,
+    #84c0bf 360deg
+  );
+}

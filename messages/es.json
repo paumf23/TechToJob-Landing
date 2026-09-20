@@ -99,5 +99,51 @@
     "p2": "Participa en canales temáticos, genera contactos y resuelve tus dudas con personas que están recorriendo caminos similares al tuyo.",
     "p3": "Al estar activo en la comunidad, cambia tu forma de encontrar empleo: en lugar de salir a buscar oportunidades todo el tiempo, las oportunidades empiezan a llegar a ti.",
     "p4": "Conoce ofertas de empleo que la comunidad comparte, recomienda perfiles y mantente cerca de las empresas y profesionales que forman parte de TechToJob."
+  },
+  "testimonials": {
+    "title": "Testimonios",
+    "items": {
+      "javier": {
+        "name": "Javier M.",
+        "role": "Mobile Developer",
+        "quote": "Estaba cansado de mandar currículums sin saber qué pasaba después. Aquí pude mostrar algunos de mis proyectos, compartirlos con la comunidad y empezar a generar contactos con empresas."
+      },
+      "marcos": {
+        "name": "Marcos V.",
+        "role": "Backend Developer",
+        "quote": "Por fin encontré un lugar donde puedo demostrar cómo programo y cómo resuelvo problemas, en lugar de depender solamente de cómo se ve mi CV."
+      },
+      "ana": {
+        "name": "Ana R.",
+        "role": "Fullstack Developer",
+        "quote": "Participar en los torneos me permitió enfrentarme a proyectos más complejos, sumar experiencia práctica y tener algo concreto para mostrar cuando busco una oportunidad profesional."
+      },
+      "sofia": {
+        "name": "Sofía L.",
+        "role": "Frontend Developer",
+        "quote": "Dejé de depender solamente de enviar CVs. Aquí puedo participar en la comunidad, mostrar lo que sé hacer y conectar con personas y oportunidades del sector."
+      }
+    }
+  },
+  "newsSection": {
+    "title": "Noticias",
+    "subtitle": "Novedades, artículos y aprendizajes de nuestra comunidad y el ecosistema tech",
+    "items": {
+      "item1": {
+        "tag": "1. Comunidad — Septiembre 2026",
+        "title": "Así nació la nueva landing de TechToJob",
+        "description": "Esta landing fue creada como resultado de nuestro segundo torneo de desarrollo. Varios participantes trabajaron sobre el mismo desafío y el proyecto ganador llegó a producción para convertirse en la nueva cara de TechToJob."
+      },
+      "item2": {
+        "tag": "2. Sector Tech — Agosto 2026",
+        "title": "¿Por qué las empresas buscan nuevas formas de evaluar talento IT?",
+        "description": "Analizamos cómo están cambiando los procesos de selección en tecnología y por qué cada vez cobra más importancia demostrar habilidades con proyectos, desafíos técnicos y situaciones cercanas al trabajo real."
+      },
+      "item3": {
+        "tag": "3. Comunidad — Agosto 2026",
+        "title": "Construir en público: cómo ganar visibilidad en la comunidad tech",
+        "description": "Compartir proyectos, avances y conocimientos puede ayudarte a construir una reputación profesional antes de conseguir tu próximo empleo. Descubrí cómo participar activamente en una comunidad puede abrir nuevas conexiones y oportunidades."
+      }
+    }
   }
 }

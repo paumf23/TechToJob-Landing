@@ -337,28 +337,28 @@ export default function Community() {
 
       {/* 2. CENTER CONTENT: 100% free and clear for effortless reading */}
       <div className="relative z-10 mx-auto max-w-4xl px-5 py-6 text-center sm:px-6 md:py-10 lg:px-8">
-        {/* Title: verde azulado */}
+        {/* Title: brand teal */}
         <h2 className="text-2xl font-bold tracking-tight text-teal break-words sm:text-3xl md:text-4xl lg:text-5xl">
           {t("title")}
         </h2>
 
         <div className="mt-6 flex flex-col items-center space-y-6 md:mt-12 md:space-y-9">
-          {/* Paragraph 1: gris de la paleta */}
+          {/* Paragraph 1: palette dark gray */}
           <p className="max-w-3xl text-sm font-medium leading-relaxed text-dark break-words sm:text-base md:text-lg lg:text-xl">
             {t("p1")}
           </p>
 
-          {/* Paragraph 2: verde azulado */}
+          {/* Paragraph 2: brand teal */}
           <p className="max-w-3xl text-sm font-bold leading-relaxed text-teal break-words sm:text-base md:text-lg lg:text-xl">
             {t("p2")}
           </p>
 
-          {/* Paragraph 3: gris de la paleta */}
+          {/* Paragraph 3: palette dark gray */}
           <p className="max-w-3xl text-sm font-medium leading-relaxed text-dark break-words sm:text-base md:text-lg lg:text-xl">
             {t("p3")}
           </p>
 
-          {/* Paragraph 4: verde azulado */}
+          {/* Paragraph 4: brand teal */}
           <p className="max-w-3xl text-sm font-bold leading-relaxed text-teal break-words sm:text-base md:text-lg lg:text-xl">
             {t("p4")}
           </p>

@@ -99,5 +99,51 @@
     "p2": "Participate in topic channels, build connections, and resolve your questions with people walking similar paths to yours.",
     "p3": "By being active in the community, your job search changes: instead of constantly chasing opportunities, opportunities start coming to you.",
     "p4": "Discover job openings shared by the community, recommend talent, and stay close to the companies and professionals that make up TechToJob."
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "items": {
+      "javier": {
+        "name": "Javier M.",
+        "role": "Mobile Developer",
+        "quote": "I was tired of sending out resumes without knowing what happened next. Here I was able to showcase some of my projects, share them with the community, and start making connections with companies."
+      },
+      "marcos": {
+        "name": "Marcos V.",
+        "role": "Backend Developer",
+        "quote": "I finally found a place where I can demonstrate how I code and solve problems, instead of depending solely on how my resume looks."
+      },
+      "ana": {
+        "name": "Ana R.",
+        "role": "Fullstack Developer",
+        "quote": "Participating in tournaments allowed me to tackle more complex projects, gain hands-on experience, and have something concrete to show when looking for professional opportunities."
+      },
+      "sofia": {
+        "name": "Sofía L.",
+        "role": "Frontend Developer",
+        "quote": "I stopped relying solely on sending CVs. Here I can participate in the community, showcase what I can do, and connect with peers and opportunities in the industry."
+      }
+    }
+  },
+  "newsSection": {
+    "title": "News",
+    "subtitle": "Updates, articles, and insights from our community and the tech ecosystem",
+    "items": {
+      "item1": {
+        "tag": "1. Community — September 2026",
+        "title": "How the new TechToJob landing page was born",
+        "description": "This landing page was created as a result of our second development tournament. Several participants worked on the same challenge, and the winning project shipped to production to become the new face of TechToJob."
+      },
+      "item2": {
+        "tag": "2. Tech Industry — August 2026",
+        "title": "Why are companies seeking new ways to assess IT talent?",
+        "description": "We analyze how tech hiring processes are shifting and why demonstrating skills through projects, technical challenges, and real-world scenarios is becoming increasingly essential."
+      },
+      "item3": {
+        "tag": "3. Community — August 2026",
+        "title": "Building in public: how to gain visibility in the tech community",
+        "description": "Sharing projects, progress, and insights can help you build professional credibility before landing your next job. Discover how being active in a community opens new connections and opportunities."
+      }
+    }
   }
 }
