@@ -170,5 +170,11 @@
       "success": "¡Gracias por suscribirte! Te mantendremos al tanto de todas las novedades.",
       "ariaLabel": "Formulario de suscripción al newsletter"
     }
+  },
+  "finalCta": {
+    "title": "El lugar donde el talento tech se encuentra.",
+    "p1": "No pierdas tiempo enviando currículums que no pasan filtros. Únete a la comunidad, destaca demostrando lo que sabes hacer y conecta con nuevas oportunidades laborales.",
+    "p2": "Ya somos más de 300 desarrolladores compartiendo código, resolviendo retos y compitiendo en torneos. Solo faltas tú.",
+    "button": "Unirme al Discord"
   }
 }
