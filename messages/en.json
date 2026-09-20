@@ -41,5 +41,63 @@
       "title": "4. Opportunities appear",
       "description": "When a company searches for a profile like yours, they can find you within the community, see your work, and reach out directly."
     }
+  },
+  "talentAndCompanies": {
+    "talent": {
+      "pill": "Offer yourself as talent",
+      "subtitle": "Let companies find you",
+      "description": "Share your tech stack, skill level, and availability on your profile. You don't need to be a senior. Community companies can learn about your experience without an automated filter deciding if you deserve to be seen.",
+      "note": "It's free for you."
+    },
+    "companies": {
+      "pill": "Post as a company",
+      "subtitle": "Get to know developers before interviewing them",
+      "description": "Post the profile you're looking for and explore community talent. Here you can discover their projects, how they solve problems, and their experience before reaching out.",
+      "note": "Find people for what they actually know how to do, not just what their resume says."
+    },
+    "cta": "Join Discord"
+  },
+  "tournaments": {
+    "title": "Tournaments",
+    "subtitle": "Learn, compete, and build your portfolio",
+    "description1": "Join open challenges, submit your solution, and receive an evaluation with public criteria. Each tournament lets you learn, add a project to your portfolio, and have something tangible to showcase in an interview.",
+    "description2": "Winning projects are launched into production. The website you are currently viewing was also developed during one of our tournaments.",
+    "timeline": {
+      "step1": {
+        "tag": "Phase 01",
+        "tab": "Challenge",
+        "title": "Challenge Launch",
+        "description": "Technical requirements, base design, and clear deadlines open to all skill levels.",
+        "points": ["Public evaluation rubric", "Clear brief and requirements", "Open participation for all"]
+      },
+      "step2": {
+        "tag": "Phase 02",
+        "tab": "Development",
+        "title": "Project Development",
+        "description": "Build your solution, solve real challenges, and submit your project repository.",
+        "points": ["Freedom in code approach and structure", "Support channels on Discord", "Submission via GitHub repo"]
+      },
+      "step3": {
+        "tag": "Phase 03",
+        "tab": "Evaluation",
+        "title": "Community Evaluation",
+        "description": "Community review with transparent metrics on code quality, accessibility, and UI.",
+        "points": ["Transparent evaluation criteria", "Constructive peer feedback", "Open community voting"]
+      },
+      "step4": {
+        "tag": "Phase 04",
+        "tab": "Deployment",
+        "title": "Live Deployment",
+        "description": "The project ships to production, giving you verifiable real-world experience.",
+        "points": ["Real-world production launch", "Verified project on your portfolio", "Visibility with tech companies"]
+      }
+    }
+  },
+  "community": {
+    "title": "Our Community",
+    "p1": "Connect with professionals in your field, share knowledge, and discover new job opportunities.",
+    "p2": "Participate in topic channels, build connections, and resolve your questions with people walking similar paths to yours.",
+    "p3": "By being active in the community, your job search changes: instead of constantly chasing opportunities, opportunities start coming to you.",
+    "p4": "Discover job openings shared by the community, recommend talent, and stay close to the companies and professionals that make up TechToJob."
   }
 }

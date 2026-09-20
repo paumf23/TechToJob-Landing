@@ -41,5 +41,63 @@
       "title": "4. Aparecen Oportunidades",
       "description": "Cuando una empresa busca un perfil como el tuyo, puede encontrarte dentro de la comunidad, conocer tu trabajo y ponerse en contacto contigo."
     }
+  },
+  "talentAndCompanies": {
+    "talent": {
+      "pill": "Ofrécete como talento",
+      "subtitle": "Que las empresas puedan encontrarte",
+      "description": "Comparte tu stack, tu nivel y tu disponibilidad en tu perfil. No necesitas ser senior. Las empresas de la comunidad pueden conocer tu experiencia sin que un filtro automático decida si mereces ser visto.",
+      "note": "Es gratis para ti."
+    },
+    "companies": {
+      "pill": "Publica como empresa",
+      "subtitle": "Conoce a los desarrolladores antes de entrevistarlos",
+      "description": "Publica el perfil que buscas y explora el talento de la comunidad. Aquí puedes conocer sus proyectos, su forma de resolver problemas y su experiencia antes de tomar contacto.",
+      "note": "Encuentra personas por lo que saben hacer, no solo por lo que dice su CV."
+    },
+    "cta": "Unirme a Discord"
+  },
+  "tournaments": {
+    "title": "Torneos",
+    "subtitle": "Aprende, compite y construye portafolio",
+    "description1": "Participa en retos abiertos, entrega tu solución y recibe una evaluación con criterios públicos. Cada torneo te permite aprender, sumar un proyecto a tu portfolio y tener algo concreto que mostrar en una entrevista.",
+    "description2": "Los proyectos ganadores se llevan a producción. El sitio que estás viendo también fue desarrollado dentro de uno de nuestros torneos.",
+    "timeline": {
+      "step1": {
+        "tag": "Fase 01",
+        "tab": "Desafío",
+        "title": "Lanzamiento del desafío",
+        "description": "Requerimientos técnicos, diseño base y fecha límite abierta para todos los niveles.",
+        "points": ["Rúbrica de evaluación pública", "Brief y requerimientos claros", "Participación abierta a todos"]
+      },
+      "step2": {
+        "tag": "Fase 02",
+        "tab": "Desarrollo",
+        "title": "Desarrollo del proyecto",
+        "description": "Construyes tu proyecto, resuelves problemas reales y compartes tu repositorio.",
+        "points": ["Libertad en enfoque y estructura del código", "Canales de soporte en Discord", "Entrega mediante repositorio GitHub"]
+      },
+      "step3": {
+        "tag": "Fase 03",
+        "tab": "Evaluación",
+        "title": "Evaluación comunitaria",
+        "description": "Revisión comunitaria con métricas claras de código, accesibilidad y diseño.",
+        "points": ["Evaluación con criterios transparentes", "Feedback constructivo entre pares", "Votación abierta comunitaria"]
+      },
+      "step4": {
+        "tag": "Fase 04",
+        "tab": "Despliegue",
+        "title": "Despliegue en vivo",
+        "description": "El proyecto se publica, sumas experiencia real comprobable y destacas en el radar tech.",
+        "points": ["Lanzamiento a producción real", "Proyecto verificado en tu portfolio", "Visibilidad ante empresas del sector"]
+      }
+    }
+  },
+  "community": {
+    "title": "Nuestra Comunidad",
+    "p1": "Conecta con profesionales de tu sector, comparte conocimientos y descubre nuevas oportunidades laborales.",
+    "p2": "Participa en canales temáticos, genera contactos y resuelve tus dudas con personas que están recorriendo caminos similares al tuyo.",
+    "p3": "Al estar activo en la comunidad, cambia tu forma de encontrar empleo: en lugar de salir a buscar oportunidades todo el tiempo, las oportunidades empiezan a llegar a ti.",
+    "p4": "Conoce ofertas de empleo que la comunidad comparte, recomienda perfiles y mantente cerca de las empresas y profesionales que forman parte de TechToJob."
   }
 }

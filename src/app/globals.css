@@ -20,11 +20,13 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
   background-color: var(--color-white);
   color: var(--color-dark);
+  overflow-x: clip;
 }
 
 @keyframes card-glow-sweep {

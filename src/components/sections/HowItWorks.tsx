@@ -123,13 +123,13 @@ export default function HowItWorks() {
       ref={sectionRef}
       className="relative bg-white md:h-[260vh]"
     >
-      <div className="flex flex-col justify-center py-16 md:sticky md:top-16 md:min-h-[calc(100vh-4rem)] md:py-16">
-        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="flex flex-col justify-center py-14 md:sticky md:top-16 md:min-h-[calc(100vh-4rem)] md:py-16">
+        <div className="mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8">
           <h2 className="text-center text-3xl font-bold text-teal md:text-4xl lg:text-5xl">
             {t("title")}
           </h2>
 
-          <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:mt-14 lg:grid-cols-4">
+          <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:mt-14 lg:grid-cols-4 lg:gap-6">
             {STEPS.map((stepKey, index) => {
               const isVisible = mounted
                 ? isDesktop
@@ -143,11 +143,12 @@ export default function HowItWorks() {
                   ref={(el) => {
                     cardRefs.current[index] = el;
                   }}
-                  className={`relative flex flex-col items-center overflow-hidden rounded-2xl bg-dark p-6 text-center shadow-lg transition-all duration-700 ease-out sm:p-7 ${
+                  className={`relative flex flex-col items-center overflow-hidden rounded-2xl border border-white/15 bg-dark p-6 text-center shadow-xl transition-all duration-700 ease-out sm:p-7 ${
                     isVisible
                       ? "translate-y-0 opacity-100 scale-100"
                       : "translate-y-8 opacity-0 scale-95 pointer-events-none"
                   }`}
+                  style={{ isolation: "isolate" }}
                 >
                   {/* Thick diffused diagonal glow sweep */}
                   {isVisible && (
@@ -161,10 +162,15 @@ export default function HowItWorks() {
                   )}
 
                   <div className="relative z-10 flex flex-col items-center">
+                    {/* Step indicator pill badge */}
+                    <div className="mb-4 inline-flex items-center gap-1.5 rounded-full border border-teal/30 bg-teal/15 px-3 py-1 text-xs font-mono font-bold text-teal">
+                      <span>0{index + 1}</span>
+                    </div>
+
                     <h3 className="text-center text-lg font-bold text-teal md:text-xl">
                       {t(`${stepKey}.title`)}
                     </h3>
-                    <p className="mt-4 text-center text-sm leading-relaxed text-white">
+                    <p className="mt-3 text-center text-sm leading-relaxed text-gray-200">
                       {t(`${stepKey}.description`)}
                     </p>
                   </div>
