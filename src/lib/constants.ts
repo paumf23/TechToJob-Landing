@@ -12,5 +12,7 @@ export const NAV_LINKS = [
   { key: "companies", href: "#companies" },
   { key: "tournaments", href: "#tournaments" },
   { key: "community", href: "#community" },
+  { key: "testimonials", href: "#testimonials" },
   { key: "news", href: "#news" },
+  { key: "newsletter", href: "#newsletter" },
 ] as const;

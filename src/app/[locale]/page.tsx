@@ -5,6 +5,7 @@ import Tournaments from "@/components/sections/Tournaments";
 import Community from "@/components/sections/Community";
 import Testimonials from "@/components/sections/Testimonials";
 import News from "@/components/sections/News";
+import Newsletter from "@/components/sections/Newsletter";
 
 export default function HomePage() {
   return (
@@ -16,6 +17,7 @@ export default function HomePage() {
       <Community />
       <Testimonials />
       <News />
+      <Newsletter />
     </main>
   );
 }

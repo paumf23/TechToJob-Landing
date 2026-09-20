@@ -13,7 +13,9 @@
     "companies": "Companies",
     "tournaments": "Tournaments",
     "community": "Community",
+    "testimonials": "Testimonials",
     "news": "News",
+    "newsletter": "Newsletter",
     "joinDiscord": "Join Discord",
     "openMenu": "Open menu",
     "closeMenu": "Close menu"
@@ -144,6 +146,29 @@
         "title": "Building in public: how to gain visibility in the tech community",
         "description": "Sharing projects, progress, and insights can help you build professional credibility before landing your next job. Discover how being active in a community opens new connections and opportunities."
       }
+    }
+  },
+  "newsletter": {
+    "title": "Newsletter",
+    "headline": "Don't miss what's happening in the community.",
+    "p1": "Receive new tournaments, job opportunities, projects, and insights to grow in tech directly in your inbox.",
+    "p2": "No spam, no noise; only what helps you take the next step in your career.",
+    "form": {
+      "nameLabel": "Name",
+      "namePlaceholder": "John",
+      "emailLabel": "Email",
+      "emailPlaceholder": "john@gmail.com",
+      "interestsTitle": "Choose what interests you",
+      "interests": {
+        "tournaments": "Tournaments",
+        "jobOffers": "Job opportunities",
+        "interviewResources": "Interview resources",
+        "eventsLiveCoding": "Events & live coding"
+      },
+      "privacyPolicy": "I accept the privacy policy",
+      "button": "Subscribe to updates",
+      "success": "Thanks for subscribing! We'll keep you updated with the latest news.",
+      "ariaLabel": "Newsletter subscription form"
     }
   }
 }

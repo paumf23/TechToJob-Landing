@@ -13,7 +13,9 @@
     "companies": "Empresas",
     "tournaments": "Torneos",
     "community": "Comunidad",
+    "testimonials": "Testimonios",
     "news": "Noticias",
+    "newsletter": "Newsletter",
     "joinDiscord": "Unirme a Discord",
     "openMenu": "Abrir menú",
     "closeMenu": "Cerrar menú"
@@ -144,6 +146,29 @@
         "title": "Construir en público: cómo ganar visibilidad en la comunidad tech",
         "description": "Compartir proyectos, avances y conocimientos puede ayudarte a construir una reputación profesional antes de conseguir tu próximo empleo. Descubrí cómo participar activamente en una comunidad puede abrir nuevas conexiones y oportunidades."
       }
+    }
+  },
+  "newsletter": {
+    "title": "Newsletter",
+    "headline": "No te pierdas lo que pasa en la comunidad.",
+    "p1": "Recibí en tu correo nuevos torneos, oportunidades laborales, proyectos y consejos para crecer en tecnología.",
+    "p2": "Sin spam, sin ruido; solo lo que puede ayudarte a dar el próximo paso en tu carrera.",
+    "form": {
+      "nameLabel": "Nombre",
+      "namePlaceholder": "Juan",
+      "emailLabel": "Email",
+      "emailPlaceholder": "juan@gmail.com",
+      "interestsTitle": "Elige lo que te interesa",
+      "interests": {
+        "tournaments": "Torneos",
+        "jobOffers": "Ofertas laborales",
+        "interviewResources": "Recursos para entrevistas",
+        "eventsLiveCoding": "Eventos y live coding"
+      },
+      "privacyPolicy": "Acepto la política de privacidad",
+      "button": "Quiero recibir novedades",
+      "success": "¡Gracias por suscribirte! Te mantendremos al tanto de todas las novedades.",
+      "ariaLabel": "Formulario de suscripción al newsletter"
     }
   }
 }
