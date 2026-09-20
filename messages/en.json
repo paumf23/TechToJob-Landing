@@ -176,5 +176,20 @@
     "p1": "Stop wasting time sending resumes that get stuck in filters. Join the community, stand out by showcasing what you can build, and connect with fresh job opportunities.",
     "p2": "We are already more than 300 developers sharing code, tackling challenges, and competing in tournaments. All that's missing is you.",
     "button": "Join Discord"
+  },
+  "footer": {
+    "tagline": "Where tech talent demonstrates its potential and connects with real opportunities.",
+    "columns": {
+      "talent": "Talent",
+      "howItWorks": "How it works",
+      "talentLink": "Talent",
+      "tournaments": "Tournaments",
+      "companies": "Companies",
+      "companiesLink": "Companies",
+      "social": "Social",
+      "legal": "Legal",
+      "privacy": "Privacy Policy"
+    },
+    "copyright": "Copyright: © 2026 TechToJob. All rights reserved."
   }
 }
