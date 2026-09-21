@@ -134,7 +134,21 @@
     "p1": "Connect with professionals in your field, share knowledge, and discover new job opportunities.",
     "p2": "Participate in topic channels, build connections, and resolve your questions with people walking similar paths to yours.",
     "p3": "By being active in the community, your job search changes: instead of constantly chasing opportunities, opportunities start coming to you.",
-    "p4": "Discover job openings shared by the community, recommend talent, and stay close to the companies and professionals that make up TechToJob."
+    "p4": "Discover job openings shared by the community, recommend talent, and stay close to the companies and professionals that make up TechToJob.",
+    "card": {
+      "tag": "Discord Community",
+      "phrase": "Area-specific channels with industry peers providing support and sharing job openings",
+      "channelsLabel": "Specialties and active channels",
+      "areas": {
+        "backend": "Backend",
+        "frontend": "Frontend",
+        "devops": "DevOps",
+        "data": "Data",
+        "ai": "AI",
+        "cybersecurity": "Cybersecurity"
+      },
+      "footer": "Direct peer-to-peer networking and early job opening alerts"
+    }
   },
   "testimonials": {
     "title": "Testimonials",

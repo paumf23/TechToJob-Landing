@@ -2,6 +2,15 @@
 
 import { useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
+import {
+  Server,
+  Layout,
+  Terminal,
+  Database,
+  Sparkles,
+  ShieldCheck,
+  Hash,
+} from "lucide-react";
 
 interface PersonNode {
   baseX: number;
@@ -287,6 +296,15 @@ function initCanvasNetwork(
 }
 
 
+const COMMUNITY_AREAS = [
+  { key: "backend", icon: Server },
+  { key: "frontend", icon: Layout },
+  { key: "devops", icon: Terminal },
+  { key: "data", icon: Database },
+  { key: "ai", icon: Sparkles },
+  { key: "cybersecurity", icon: ShieldCheck },
+] as const;
+
 export default function Community() {
   const t = useTranslations("community");
   const topContainerRef = useRef<HTMLDivElement>(null);
@@ -335,33 +353,106 @@ export default function Community() {
         <div className="pointer-events-none absolute inset-x-0 bottom-0 h-8 bg-gradient-to-t from-white to-transparent" />
       </div>
 
-      {/* 2. CENTER CONTENT: 100% free and clear for effortless reading */}
-      <div className="relative z-10 mx-auto max-w-4xl px-5 py-6 text-center sm:px-6 md:py-10 lg:px-8">
-        {/* Title: brand teal */}
-        <h2 className="text-2xl font-bold tracking-tight text-teal break-words sm:text-3xl md:text-4xl lg:text-5xl">
-          {t("title")}
-        </h2>
+      {/* 2. CENTER CONTENT: 2 columns on desktop */}
+      <div className="relative z-10 mx-auto max-w-7xl px-5 py-8 sm:px-6 md:py-12 lg:px-8">
+        <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-12 xl:gap-16">
+          {/* Left Column: Title + Paragraphs (all aligned to the left) */}
+          <div className="text-left lg:col-span-6 xl:col-span-7">
+            {/* Title: brand teal */}
+            <h2 className="text-2xl font-bold tracking-tight text-teal break-words sm:text-3xl md:text-4xl lg:text-5xl">
+              {t("title")}
+            </h2>
 
-        <div className="mt-6 flex flex-col items-center space-y-6 md:mt-12 md:space-y-9">
-          {/* Paragraph 1: palette dark gray */}
-          <p className="max-w-3xl text-sm font-medium leading-relaxed text-dark break-words sm:text-base md:text-lg lg:text-xl">
-            {t("p1")}
-          </p>
+            <div className="mt-6 flex flex-col space-y-5 md:mt-8 md:space-y-6">
+              {/* Paragraph 1: palette dark gray */}
+              <p className="text-sm font-medium leading-relaxed text-dark break-words sm:text-base md:text-lg">
+                {t("p1")}
+              </p>
 
-          {/* Paragraph 2: palette dark gray */}
-          <p className="max-w-3xl text-sm font-bold leading-relaxed text-dark break-words sm:text-base md:text-lg lg:text-xl">
-            {t("p2")}
-          </p>
+              {/* Paragraph 2: palette dark gray */}
+              <p className="text-sm font-bold leading-relaxed text-dark break-words sm:text-base md:text-lg">
+                {t("p2")}
+              </p>
 
-          {/* Paragraph 3: palette dark gray */}
-          <p className="max-w-3xl text-sm font-medium leading-relaxed text-dark break-words sm:text-base md:text-lg lg:text-xl">
-            {t("p3")}
-          </p>
+              {/* Paragraph 3: palette dark gray */}
+              <p className="text-sm font-medium leading-relaxed text-dark break-words sm:text-base md:text-lg">
+                {t("p3")}
+              </p>
 
-          {/* Paragraph 4: palette dark gray */}
-          <p className="max-w-3xl text-sm font-bold leading-relaxed text-dark break-words sm:text-base md:text-lg lg:text-xl">
-            {t("p4")}
-          </p>
+              {/* Paragraph 4: palette dark gray */}
+              <p className="text-sm font-bold leading-relaxed text-dark break-words sm:text-base md:text-lg">
+                {t("p4")}
+              </p>
+            </div>
+          </div>
+
+          {/* Right Column: Community Channels Card */}
+          <div className="w-full lg:col-span-6 xl:col-span-5">
+            <div className="relative overflow-hidden rounded-3xl border-2 border-teal/40 bg-dark p-6 text-left shadow-2xl shadow-teal/10 sm:p-8 transition-all duration-300 hover:border-teal/60">
+              {/* Subtle ambient glow inside card */}
+              <div
+                className="pointer-events-none absolute -right-10 -top-10 h-44 w-44 rounded-full bg-teal/15 blur-3xl"
+                aria-hidden="true"
+              />
+              <div
+                className="pointer-events-none absolute -left-10 -bottom-10 h-36 w-36 rounded-full bg-teal/10 blur-2xl"
+                aria-hidden="true"
+              />
+
+              {/* Header Badge */}
+              <div className="relative z-10 flex items-center justify-between gap-3">
+                <span className="inline-flex items-center gap-2 rounded-full border border-teal/40 bg-teal/15 px-3 py-1 text-xs font-bold text-teal">
+                  <span className="relative flex h-2 w-2">
+                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-teal opacity-75"></span>
+                    <span className="relative inline-flex h-2 w-2 rounded-full bg-teal"></span>
+                  </span>
+                  {t("card.tag")}
+                </span>
+                <div className="flex items-center gap-1 text-xs text-teal/80">
+                  <Hash size={14} className="text-teal" />
+                  <span className="font-mono font-semibold">discord</span>
+                </div>
+              </div>
+
+              {/* Main Phrase Requested by User */}
+              <p className="relative z-10 mt-5 text-base font-bold leading-snug text-white sm:text-lg md:text-xl">
+                {t("card.phrase")}
+              </p>
+
+              {/* Divider / Channels Label */}
+              <div className="relative z-10 my-5 flex items-center gap-2">
+                <span className="text-[11px] font-bold uppercase tracking-wider text-teal">
+                  {t("card.channelsLabel")}
+                </span>
+                <div className="h-px flex-1 bg-white/10" />
+              </div>
+
+              {/* Area Pills */}
+              <div className="relative z-10 grid grid-cols-2 gap-3">
+                {COMMUNITY_AREAS.map(({ key, icon: Icon }) => (
+                  <div
+                    key={key}
+                    className="group flex items-center gap-2.5 rounded-xl border border-white/10 bg-white/[0.05] px-3 py-2.5 text-xs font-medium text-gray-200 transition-all duration-200 hover:border-teal/60 hover:bg-teal/15 hover:text-white sm:text-sm"
+                  >
+                    <div className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-lg bg-teal/20 text-teal transition-colors group-hover:bg-teal group-hover:text-dark">
+                      <Icon size={14} />
+                    </div>
+                    <span className="whitespace-nowrap font-semibold text-gray-200 group-hover:text-white">
+                      {t(`card.areas.${key}`)}
+                    </span>
+                  </div>
+                ))}
+              </div>
+
+              {/* Footer Note */}
+              <div className="relative z-10 mt-5 border-t border-white/10 pt-3.5 text-xs text-gray-300">
+                <p className="flex items-center gap-1.5 text-[11px] text-teal-light/90">
+                  <span className="h-1.5 w-1.5 rounded-full bg-teal"></span>
+                  {t("card.footer")}
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 

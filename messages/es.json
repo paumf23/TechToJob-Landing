@@ -134,7 +134,21 @@
     "p1": "Conecta con profesionales de tu sector, comparte conocimientos y descubre nuevas oportunidades laborales.",
     "p2": "Participa en canales temáticos, genera contactos y resuelve tus dudas con personas que están recorriendo caminos similares al tuyo.",
     "p3": "Al estar activo en la comunidad, cambia tu forma de encontrar empleo: en lugar de salir a buscar oportunidades todo el tiempo, las oportunidades empiezan a llegar a ti.",
-    "p4": "Conoce ofertas de empleo que la comunidad comparte, recomienda perfiles y mantente cerca de las empresas y profesionales que forman parte de TechToJob."
+    "p4": "Conoce ofertas de empleo que la comunidad comparte, recomienda perfiles y mantente cerca de las empresas y profesionales que forman parte de TechToJob.",
+    "card": {
+      "tag": "Comunidad en Discord",
+      "phrase": "Canales por área con gente del sector que brinda soporte y comparte vacantes",
+      "channelsLabel": "Especialidades y canales activos",
+      "areas": {
+        "backend": "Backend",
+        "frontend": "Frontend",
+        "devops": "DevOps",
+        "data": "Data",
+        "ai": "IA",
+        "cybersecurity": "Ciberseguridad"
+      },
+      "footer": "Networking directo entre pares y alertas tempranas de empleo"
+    }
   },
   "testimonials": {
     "title": "Testimonios",
