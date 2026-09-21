@@ -79,7 +79,7 @@ export default function Tournaments() {
           />
 
           {/* Stepper Tabs */}
-          <div className="relative z-10 flex flex-wrap items-center justify-center gap-1.5 border-b border-white/10 pb-5 sm:gap-3 sm:pb-6">
+          <div className="relative z-10 flex flex-wrap items-center justify-center gap-2 border-b border-white/10 pb-5 sm:gap-3 sm:pb-6">
             {TIMELINE_STEPS.map((step, idx) => {
               const isActive = idx === activeIndex;
               return (
@@ -87,7 +87,7 @@ export default function Tournaments() {
                   key={step.key}
                   type="button"
                   onClick={() => setActiveIndex(idx)}
-                  className={`rounded-xl px-2.5 py-1.5 text-xs font-bold transition-all sm:px-4 sm:py-2 sm:text-sm ${
+                  className={`min-h-[36px] rounded-xl px-3 py-2 text-xs font-bold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal sm:min-h-[40px] sm:px-4 sm:py-2.5 sm:text-sm ${
                     isActive
                       ? "bg-teal text-dark shadow-md"
                       : "bg-white/5 text-gray-300 hover:bg-white/10 hover:text-white"
@@ -161,19 +161,24 @@ export default function Tournaments() {
           {/* Bottom navigation controls */}
           <div className="relative z-10 mt-8 flex items-center justify-between pt-2">
             {/* Dots */}
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-1 sm:gap-1.5">
               {TIMELINE_STEPS.map((step, idx) => (
                 <button
                   key={step.key}
                   type="button"
                   onClick={() => setActiveIndex(idx)}
-                  className={`h-2.5 rounded-full transition-all ${
-                    idx === activeIndex
-                      ? "w-8 bg-teal"
-                      : "w-2.5 bg-white/20 hover:bg-white/40"
-                  }`}
+                  className="group flex h-9 min-w-8 items-center justify-center rounded-full p-1 transition-colors hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal"
                   aria-label={`Slide ${idx + 1}`}
-                />
+                  aria-current={idx === activeIndex ? "true" : undefined}
+                >
+                  <span
+                    className={`h-3 rounded-full transition-all duration-300 ${
+                      idx === activeIndex
+                        ? "w-9 bg-teal"
+                        : "w-3 bg-white/30 group-hover:bg-white/60"
+                    }`}
+                  />
+                </button>
               ))}
             </div>
 
@@ -182,19 +187,19 @@ export default function Tournaments() {
               <button
                 type="button"
                 onClick={handlePrev}
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white transition-colors hover:border-teal hover:bg-teal hover:text-dark"
+                className="flex h-12 w-12 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white transition-all hover:border-teal hover:bg-teal hover:text-dark hover:scale-105 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal"
                 aria-label="Fase anterior"
               >
-                <ChevronLeft size={20} />
+                <ChevronLeft size={24} />
               </button>
 
               <button
                 type="button"
                 onClick={handleNext}
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white transition-colors hover:border-teal hover:bg-teal hover:text-dark"
+                className="flex h-12 w-12 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white transition-all hover:border-teal hover:bg-teal hover:text-dark hover:scale-105 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal"
                 aria-label="Siguiente fase"
               >
-                <ChevronRight size={20} />
+                <ChevronRight size={24} />
               </button>
             </div>
           </div>

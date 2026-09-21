@@ -5,6 +5,7 @@ import { getMessages, getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { getSiteUrl } from "@/lib/constants";
 import "../globals.css";
 
 const sora = Sora({
@@ -30,10 +31,10 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "metadata" });
-  const alternateLocale = locale === "es" ? "en" : "es";
+  const siteUrl = getSiteUrl();
 
   return {
-    metadataBase: new URL("https://techtojob.vercel.app"),
+    metadataBase: new URL(siteUrl),
     title: {
       template: "%s | TechToJob",
       default: t("title"),
@@ -65,6 +66,7 @@ export async function generateMetadata({
       languages: {
         es: "/es",
         en: "/en",
+        "x-default": "/es",
       },
     },
   };
@@ -79,13 +81,14 @@ export default async function LocaleLayout({
 }) {
   const { locale } = await params;
   const messages = await getMessages();
+  const siteUrl = getSiteUrl();
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "TechToJob",
-    url: "https://techtojob.vercel.app",
-    logo: "https://techtojob.vercel.app/v2Degradado.svg",
+    url: siteUrl,
+    logo: `${siteUrl}/v2Degradado.svg`,
     sameAs: [
       "https://www.linkedin.com/company/techtojob/",
       "https://x.com/techtojob",

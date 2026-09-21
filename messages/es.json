@@ -49,13 +49,47 @@
       "pill": "Ofrécete como talento",
       "subtitle": "Que las empresas puedan encontrarte",
       "description": "Comparte tu stack, tu nivel y tu disponibilidad en tu perfil. No necesitas ser senior. Las empresas de la comunidad pueden conocer tu experiencia sin que un filtro automático decida si mereces ser visto.",
-      "note": "Es gratis para ti."
+      "note": "Es gratis para ti.",
+      "card": {
+        "status": "Disponible para ofertas",
+        "role": "Frontend Developer",
+        "levelAndAvailability": "Nivel Trainee / Junior · Disponibilidad Full-time",
+        "stackLabel": "Stack en acción",
+        "benefitsLabel": "Garantías del proceso",
+        "benefits": [
+          "Sin filtros ATS",
+          "Revisión humana",
+          "Contacto directo",
+          "Cero ghosting",
+          "Perfil siempre visible"
+        ],
+        "badge1": "Torneo #02 · Finalista",
+        "badge2": "Código verificado en GitHub"
+      }
     },
     "companies": {
       "pill": "Publica como empresa",
       "subtitle": "Conoce a los desarrolladores antes de entrevistarlos",
       "description": "Publica el perfil que buscas y explora el talento de la comunidad. Aquí puedes conocer sus proyectos, su forma de resolver problemas y su experiencia antes de tomar contacto.",
-      "note": "Encuentra personas por lo que saben hacer, no solo por lo que dice su CV."
+      "note": "Encuentra personas por lo que saben hacer, no solo por lo que dice su CV.",
+      "card": {
+        "status": "Radar de talento",
+        "searchLabel": "Posición en búsqueda",
+        "role": "Frontend Developer",
+        "matchInfo": "3 perfiles con código comprobable",
+        "previewLabel": "Pre-evaluación disponible",
+        "projectTitle": "Solución técnica · Torneo #02",
+        "projectDesc": "Demo en producción + código en GitHub evaluado",
+        "badge1": "Ahorro de +5h en screening",
+        "badge2": "0% CVs inflados",
+        "benefitsLabel": "Ventajas para empresas",
+        "benefits": [
+          "Sin tests técnicos genéricos",
+          "Proyectos reales en producción",
+          "Talento evaluado en comunidad",
+          "Contacto directo sin intermediarios"
+        ]
+      }
     },
     "cta": "Unirme a Discord"
   },

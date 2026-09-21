@@ -49,13 +49,47 @@
       "pill": "Offer yourself as talent",
       "subtitle": "Let companies find you",
       "description": "Share your tech stack, skill level, and availability on your profile. You don't need to be a senior. Community companies can learn about your experience without an automated filter deciding if you deserve to be seen.",
-      "note": "It's free for you."
+      "note": "It's free for you.",
+      "card": {
+        "status": "Open to work",
+        "role": "Frontend Developer",
+        "levelAndAvailability": "Junior / Trainee level · Full-time availability",
+        "stackLabel": "Active stack",
+        "benefitsLabel": "Process guarantees",
+        "benefits": [
+          "No ATS filters",
+          "Human review",
+          "Direct contact",
+          "Zero ghosting",
+          "Always visible profile"
+        ],
+        "badge1": "Tournament #02 · Finalist",
+        "badge2": "Verified GitHub code"
+      }
     },
     "companies": {
       "pill": "Post as a company",
       "subtitle": "Get to know developers before interviewing them",
       "description": "Post the profile you're looking for and explore community talent. Here you can discover their projects, how they solve problems, and their experience before reaching out.",
-      "note": "Find people for what they actually know how to do, not just what their resume says."
+      "note": "Find people for what they actually know how to do, not just what their resume says.",
+      "card": {
+        "status": "Talent radar",
+        "searchLabel": "Hiring position",
+        "role": "Frontend Developer",
+        "matchInfo": "3 profiles with verifiable code",
+        "previewLabel": "Pre-evaluation available",
+        "projectTitle": "Technical solution · Tournament #02",
+        "projectDesc": "Production demo + reviewed GitHub code",
+        "badge1": "Save +5h in screening",
+        "badge2": "0% exaggerated resumes",
+        "benefitsLabel": "Company advantages",
+        "benefits": [
+          "No generic coding tests",
+          "Real production projects",
+          "Community-evaluated talent",
+          "Direct contact, zero middlemen"
+        ]
+      }
     },
     "cta": "Join Discord"
   },

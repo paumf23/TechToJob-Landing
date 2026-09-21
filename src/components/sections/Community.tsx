@@ -348,8 +348,8 @@ export default function Community() {
             {t("p1")}
           </p>
 
-          {/* Paragraph 2: brand teal */}
-          <p className="max-w-3xl text-sm font-bold leading-relaxed text-teal break-words sm:text-base md:text-lg lg:text-xl">
+          {/* Paragraph 2: palette dark gray */}
+          <p className="max-w-3xl text-sm font-bold leading-relaxed text-dark break-words sm:text-base md:text-lg lg:text-xl">
             {t("p2")}
           </p>
 
@@ -358,8 +358,8 @@ export default function Community() {
             {t("p3")}
           </p>
 
-          {/* Paragraph 4: brand teal */}
-          <p className="max-w-3xl text-sm font-bold leading-relaxed text-teal break-words sm:text-base md:text-lg lg:text-xl">
+          {/* Paragraph 4: palette dark gray */}
+          <p className="max-w-3xl text-sm font-bold leading-relaxed text-dark break-words sm:text-base md:text-lg lg:text-xl">
             {t("p4")}
           </p>
         </div>

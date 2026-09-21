@@ -1,5 +1,15 @@
 export const DISCORD_URL = "https://discord.gg/s3fJJfVmEX";
 
+export const getSiteUrl = () => {
+  if (process.env.NEXT_PUBLIC_SITE_URL) {
+    return process.env.NEXT_PUBLIC_SITE_URL;
+  }
+  if (process.env.NODE_ENV === "development") {
+    return "http://localhost:3000";
+  }
+  return "https://techtojob.vercel.app";
+};
+
 export const SOCIAL_LINKS = {
   linkedin: "https://www.linkedin.com/company/techtojob/",
   twitter: "https://x.com/techtojob",

@@ -50,13 +50,13 @@ export default function Newsletter() {
               {t("headline")}
             </h3>
 
-            {/* Paragraph 1: Brand Teal */}
-            <p className="text-base font-semibold leading-relaxed text-teal-dark break-words sm:text-lg">
+            {/* Paragraph 1: Palette Dark Gray */}
+            <p className="text-base font-medium leading-relaxed text-dark break-words sm:text-lg">
               {t("p1")}
             </p>
 
-            {/* Paragraph 2: Brand Teal */}
-            <p className="text-base font-semibold leading-relaxed text-teal-dark break-words sm:text-lg">
+            {/* Paragraph 2: Palette Dark Gray */}
+            <p className="text-base font-medium leading-relaxed text-dark break-words sm:text-lg">
               {t("p2")}
             </p>
           </div>
