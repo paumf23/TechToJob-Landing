@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { DISCORD_URL } from "@/lib/constants";
+import CodeParticlesBackground from "@/components/ui/CodeParticlesBackground";
 
 export default function FinalCta() {
   const t = useTranslations("finalCta");
@@ -7,8 +8,23 @@ export default function FinalCta() {
   return (
     <section
       id="join"
-      className="relative overflow-hidden bg-dark py-16 sm:py-20 md:py-24 lg:py-28"
+      className="relative overflow-hidden bg-dark pt-24 pb-16 sm:pt-28 sm:pb-20 md:pt-36 md:pb-24 lg:pt-40 lg:pb-28"
     >
+      {/* Code Syntax Particles Floating Background */}
+      <CodeParticlesBackground />
+
+      {/* Atmospheric Gradient & Central Glow Transition from Newsletter (White) */}
+      <div
+        className="pointer-events-none absolute inset-x-0 top-0 z-10 h-28 sm:h-36 md:h-44 overflow-hidden"
+        aria-hidden="true"
+      >
+        {/* Central Luminous Teal Ambient Glow */}
+        <div className="absolute left-1/2 top-3 -translate-x-1/2 h-24 w-[320px] sm:h-32 sm:w-[540px] md:h-40 md:w-[750px] rounded-full bg-teal/35 blur-3xl" />
+
+        {/* Smooth Atmospheric Gradient from Pure White to Transparent */}
+        <div className="absolute inset-0 bg-gradient-to-b from-white via-dark/30 via-75% to-transparent" />
+      </div>
+
       {/* Subtle ambient glow in the background */}
       <div
         className="pointer-events-none absolute inset-0 opacity-20"
@@ -19,7 +35,7 @@ export default function FinalCta() {
         aria-hidden="true"
       />
 
-      <div className="relative mx-auto max-w-5xl px-5 text-center sm:px-6 lg:px-8">
+      <div className="relative z-10 mx-auto max-w-5xl px-5 text-center sm:px-6 lg:px-8">
         {/* Main Heading in Brand Teal */}
         <h2 className="text-3xl font-bold tracking-tight text-teal sm:text-4xl md:text-5xl lg:text-6xl">
           {t("title")}
