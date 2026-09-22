@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "TechToJob — Comunidad de desarrolladores y empresas tech",
-    "description": "Conecta con oportunidades tech reales. Publica tu perfil, encuentra talento y participa en torneos de desarrollo en español."
+    "description": "Conecta con oportunidades tech reales. Demuestra tu talento en torneos de código en vivo, accede a empleos directos y únete a la gran comunidad de TechToJob."
   },
   "common": {
     "joinDiscord": "Únete a la comunidad",
@@ -142,9 +142,11 @@
       "areas": {
         "backend": "Backend",
         "frontend": "Frontend",
+        "mobile": "Mobile",
+        "uxui": "UX/UI",
+        "qa": "QA",
         "devops": "DevOps",
-        "data": "Data",
-        "ai": "IA",
+        "data_ai": "Data e IA",
         "cybersecurity": "Ciberseguridad"
       },
       "footer": "Networking directo entre pares y alertas tempranas de empleo"
@@ -222,11 +224,11 @@
   "finalCta": {
     "title": "El lugar donde el talento tech se encuentra.",
     "p1": "No pierdas tiempo enviando currículums que no pasan filtros. Únete a la comunidad, destaca demostrando lo que sabes hacer y conecta con nuevas oportunidades laborales.",
-    "p2": "Ya somos más de 300 desarrolladores compartiendo código, resolviendo retos y compitiendo en torneos. Solo faltas tú.",
+    "p2": "Ya somos muchos desarrolladores compartiendo código, resolviendo retos y compitiendo en torneos. Esta comunidad no para de crecer, solo faltas tú.",
     "button": "Unirme al Discord"
   },
   "footer": {
-    "tagline": "Donde el talento tech demuestra su potencial y conecta con oportunidades reales.",
+    "tagline": "Donde el talento tech demuestra su potencial y conecta con oportunidades laborales.",
     "columns": {
       "talent": "Talento",
       "howItWorks": "Cómo funciona",

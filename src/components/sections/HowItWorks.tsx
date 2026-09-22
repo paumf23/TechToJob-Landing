@@ -1,7 +1,9 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { useTranslations } from "next-intl";
+
+const emptySubscribe = () => () => {};
 
 const STEPS = ["step1", "step2", "step3", "step4"] as const;
 
@@ -11,7 +13,7 @@ export default function HowItWorks() {
   const cardRefs = useRef<(HTMLElement | null)[]>([]);
 
   const [isDesktop, setIsDesktop] = useState(false);
-  const [mounted, setMounted] = useState(false);
+  const mounted = useSyncExternalStore(emptySubscribe, () => true, () => false);
   const [desktopVisibleCount, setDesktopVisibleCount] = useState(0);
   const [mobileVisible, setMobileVisible] = useState<boolean[]>([
     false,
@@ -23,8 +25,6 @@ export default function HowItWorks() {
   const maxVisibleRef = useRef(0);
 
   useEffect(() => {
-    setMounted(true);
-
     const checkDevice = () => {
       setIsDesktop(window.innerWidth >= 768);
     };

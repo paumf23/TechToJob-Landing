@@ -43,6 +43,7 @@ export async function generateMetadata({
     openGraph: {
       type: "website",
       locale: locale === "es" ? "es_ES" : "en_US",
+      url: `${siteUrl}/${locale}`,
       siteName: "TechToJob",
       title: t("title"),
       description: t("description"),
@@ -51,7 +52,8 @@ export async function generateMetadata({
           url: "/og-image.png",
           width: 1200,
           height: 630,
-          alt: "TechToJob",
+          type: "image/png",
+          alt: t("title"),
         },
       ],
     },
@@ -59,7 +61,16 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: t("title"),
       description: t("description"),
-      images: ["/og-image.png"],
+      site: "@techtojob",
+      creator: "@techtojob",
+      images: [
+        {
+          url: "/og-image.png",
+          width: 1200,
+          height: 630,
+          alt: t("title"),
+        },
+      ],
     },
     alternates: {
       canonical: `/${locale}`,
@@ -80,13 +91,17 @@ export default async function LocaleLayout({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const messages = await getMessages();
+  const [messages, t] = await Promise.all([
+    getMessages(),
+    getTranslations({ locale, namespace: "metadata" }),
+  ]);
   const siteUrl = getSiteUrl();
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "TechToJob",
+    description: t("description"),
     url: siteUrl,
     logo: `${siteUrl}/v2Degradado.svg`,
     sameAs: [

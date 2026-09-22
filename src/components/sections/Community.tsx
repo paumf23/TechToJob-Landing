@@ -5,9 +5,11 @@ import { useTranslations } from "next-intl";
 import {
   Server,
   Layout,
+  Smartphone,
+  Palette,
+  CheckCheck,
   Terminal,
-  Database,
-  Sparkles,
+  BrainCircuit,
   ShieldCheck,
   Hash,
 } from "lucide-react";
@@ -299,9 +301,11 @@ function initCanvasNetwork(
 const COMMUNITY_AREAS = [
   { key: "backend", icon: Server },
   { key: "frontend", icon: Layout },
+  { key: "mobile", icon: Smartphone },
+  { key: "uxui", icon: Palette },
+  { key: "qa", icon: CheckCheck },
   { key: "devops", icon: Terminal },
-  { key: "data", icon: Database },
-  { key: "ai", icon: Sparkles },
+  { key: "data_ai", icon: BrainCircuit },
   { key: "cybersecurity", icon: ShieldCheck },
 ] as const;
 
@@ -432,12 +436,12 @@ export default function Community() {
                 {COMMUNITY_AREAS.map(({ key, icon: Icon }) => (
                   <div
                     key={key}
-                    className="group flex items-center gap-2.5 rounded-xl border border-white/10 bg-white/[0.05] px-3 py-2.5 text-xs font-medium text-gray-200 transition-all duration-200 hover:border-teal/60 hover:bg-teal/15 hover:text-white sm:text-sm"
+                    className="group flex min-w-0 items-center gap-2 sm:gap-2.5 rounded-xl border border-white/10 bg-white/[0.05] px-2.5 py-2 sm:px-3 sm:py-2.5 text-xs font-medium text-gray-200 transition-all duration-200 hover:border-teal/60 hover:bg-teal/15 hover:text-white sm:text-sm"
                   >
                     <div className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-lg bg-teal/20 text-teal transition-colors group-hover:bg-teal group-hover:text-dark">
                       <Icon size={14} />
                     </div>
-                    <span className="whitespace-nowrap font-semibold text-gray-200 group-hover:text-white">
+                    <span className="truncate font-semibold text-gray-200 group-hover:text-white">
                       {t(`card.areas.${key}`)}
                     </span>
                   </div>

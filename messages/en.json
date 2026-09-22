@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "TechToJob — Developer and tech company community",
-    "description": "Connect with real tech opportunities. Publish your profile, find talent, and participate in development tournaments in Spanish."
+    "description": "Connect with real tech opportunities. Showcase your talent in live coding tournaments, access direct job openings, and join the great TechToJob community."
   },
   "common": {
     "joinDiscord": "Join the community",
@@ -142,9 +142,11 @@
       "areas": {
         "backend": "Backend",
         "frontend": "Frontend",
+        "mobile": "Mobile",
+        "uxui": "UX/UI",
+        "qa": "QA",
         "devops": "DevOps",
-        "data": "Data",
-        "ai": "AI",
+        "data_ai": "Data & AI",
         "cybersecurity": "Cybersecurity"
       },
       "footer": "Direct peer-to-peer networking and early job opening alerts"
@@ -222,11 +224,11 @@
   "finalCta": {
     "title": "The place where tech talent meets.",
     "p1": "Stop wasting time sending resumes that get stuck in filters. Join the community, stand out by showcasing what you can build, and connect with fresh job opportunities.",
-    "p2": "We are already more than 300 developers sharing code, tackling challenges, and competing in tournaments. All that's missing is you.",
+    "p2": "There are already many developers sharing code, tackling challenges, and competing in tournaments. This community never stops growing, all that's missing is you.",
     "button": "Join Discord"
   },
   "footer": {
-    "tagline": "Where tech talent demonstrates its potential and connects with real opportunities.",
+    "tagline": "Where tech talent demonstrates its potential and connects with job opportunities.",
     "columns": {
       "talent": "Talent",
       "howItWorks": "How it works",
