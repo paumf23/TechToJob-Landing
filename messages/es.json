@@ -22,7 +22,7 @@
   },
   "hero": {
     "title": "La comunidad de <teal>desarrolladores</teal> que conecta con <teal>empresas tech</teal>",
-    "description": "Participá en proyectos, torneos y canales de networking dentro de nuestro Discord. Mostrá lo que sabés hacer, construí experiencia y generá conexiones para que las oportunidades de empleo IT te encuentren.",
+    "description": "Participa en proyectos, torneos y canales de networking dentro de nuestro Discord. Muestra lo que sabes hacer, construye experiencia y genera conexiones para que las oportunidades de empleo IT te encuentren.",
     "cta": "Unirme a Discord"
   },
   "howItWorks": {
@@ -194,14 +194,14 @@
       "item3": {
         "tag": "3. Comunidad — Agosto 2026",
         "title": "Construir en público: cómo ganar visibilidad en la comunidad tech",
-        "description": "Compartir proyectos, avances y conocimientos puede ayudarte a construir una reputación profesional antes de conseguir tu próximo empleo. Descubrí cómo participar activamente en una comunidad puede abrir nuevas conexiones y oportunidades."
+        "description": "Compartir proyectos, avances y conocimientos puede ayudarte a construir una reputación profesional antes de conseguir tu próximo empleo. Descubre cómo participar activamente en una comunidad puede abrir nuevas conexiones y oportunidades."
       }
     }
   },
   "newsletter": {
     "title": "Newsletter",
     "headline": "No te pierdas lo que pasa en la comunidad.",
-    "p1": "Recibí en tu correo nuevos torneos, oportunidades laborales, proyectos y consejos para crecer en tecnología.",
+    "p1": "Recibe en tu correo nuevos torneos, oportunidades laborales, proyectos y consejos para crecer en tecnología.",
     "p2": "Sin spam, sin ruido; solo lo que puede ayudarte a dar el próximo paso en tu carrera.",
     "form": {
       "nameLabel": "Nombre",
