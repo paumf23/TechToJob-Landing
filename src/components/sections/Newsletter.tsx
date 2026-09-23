@@ -36,15 +36,15 @@ export default function Newsletter() {
       className="scroll-mt-16 overflow-hidden bg-white py-14 sm:py-16 md:py-24 lg:py-28"
     >
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
-        {/* Section Title */}
-        <h2 className="text-center text-3xl font-bold tracking-tight text-dark break-words sm:text-4xl md:text-5xl">
-          {t("title")}
-        </h2>
-
         {/* 2-Column Responsive Layout */}
-        <div className="mt-10 grid grid-cols-1 items-start gap-10 sm:mt-12 md:mt-16 lg:grid-cols-2 lg:gap-16">
+        <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16">
           {/* Left Column: Headlines and Value Proposition */}
-          <div className="flex flex-col space-y-6 sm:space-y-7 lg:pt-4">
+          <div className="flex flex-col space-y-5 sm:space-y-6">
+            {/* Section Title */}
+            <h2 className="text-3xl font-bold tracking-tight text-teal break-words sm:text-4xl md:text-5xl">
+              {t("title")}
+            </h2>
+
             {/* Main Lead: Palette Dark Gray */}
             <h3 className="text-2xl font-bold tracking-tight text-dark break-words sm:text-3xl lg:text-4xl leading-tight">
               {t("headline")}

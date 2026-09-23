@@ -170,6 +170,7 @@
   },
   "testimonials": {
     "title": "Testimonials",
+    "subtitle": "Real stories from developers who turned the frustration of unanswered job applications into action: solving technical challenges, collaborating as a team, and becoming visible through what they are able to build.",
     "items": {
       "javier": {
         "name": "Javier M.",
@@ -190,6 +191,36 @@
         "name": "Sofía L.",
         "role": "Frontend Developer",
         "quote": "I stopped relying solely on sending CVs. Here I can participate in the community, showcase what I can do, and connect with peers and opportunities in the industry."
+      }
+    },
+    "stats": {
+      "heading": "Numbers that speak for themselves",
+      "items": {
+        "members": {
+          "value": "+500",
+          "label": "Developers on Discord",
+          "description": "Programmers sharing questions, resources, and projects daily."
+        },
+        "rating": {
+          "value": "4.9 / 5",
+          "label": "Community rating",
+          "description": "Average rating on the community environment and dynamics."
+        },
+        "satisfaction": {
+          "value": "100%",
+          "label": "Atmosphere satisfaction",
+          "description": "Toxicity-free community focused on mutual collaboration."
+        },
+        "feedback": {
+          "value": "100%",
+          "label": "Projects with feedback",
+          "description": "Every submission receives reviews and constructive feedback from peers."
+        },
+        "confidence": {
+          "value": "+95%",
+          "label": "Higher technical confidence",
+          "description": "Developers who gained confidence by sharing code and collaborating."
+        }
       }
     }
   },

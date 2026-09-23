@@ -170,6 +170,7 @@
   },
   "testimonials": {
     "title": "Testimonios",
+    "subtitle": "Historias reales de desarrolladores que transformaron la frustración de enviar solicitudes sin respuesta en acción: resolviendo retos técnicos, colaborando en equipo y haciéndose visibles a través de lo que son capaces de construir.",
     "items": {
       "javier": {
         "name": "Javier M.",
@@ -190,6 +191,36 @@
         "name": "Sofía L.",
         "role": "Frontend Developer",
         "quote": "Dejé de depender solamente de enviar CVs. Aquí puedo participar en la comunidad, mostrar lo que sé hacer y conectar con personas y oportunidades del sector."
+      }
+    },
+    "stats": {
+      "heading": "Números que hablan por sí solos",
+      "items": {
+        "members": {
+          "value": "+500",
+          "label": "Developers en Discord",
+          "description": "Programadores compartiendo dudas, recursos y proyectos a diario."
+        },
+        "rating": {
+          "value": "4.9 / 5",
+          "label": "Calificación de la comunidad",
+          "description": "Valoración promedio sobre el ambiente y las dinámicas."
+        },
+        "satisfaction": {
+          "value": "100%",
+          "label": "Satisfacción con el ambiente",
+          "description": "Comunidad libre de toxicidad, enfocada en la colaboración mutua."
+        },
+        "feedback": {
+          "value": "100%",
+          "label": "Proyectos con feedback",
+          "description": "Cada entrega recibe revisión y opiniones de otros desarrolladores."
+        },
+        "confidence": {
+          "value": "+95%",
+          "label": "Mayor confianza técnica",
+          "description": "Desarrolladores que ganaron seguridad al compartir código en equipo."
+        }
       }
     }
   },
