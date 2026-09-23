@@ -28,19 +28,19 @@
   "howItWorks": {
     "title": "Cómo Funciona",
     "step1": {
-      "title": "1. Entra a la comunidad",
+      "title": "Entra a la comunidad",
       "description": "Únete al Discord al instante sin formularios de registro. Conoce los canales, proyectos y conversaciones que más te interesan."
     },
     "step2": {
-      "title": "2. Participa y demuestra lo que sabes",
+      "title": "Participa y demuestra lo que sabes",
       "description": "Comparte tus proyectos, resuelve retos, participa en torneos y forma parte de las conversaciones de la comunidad."
     },
     "step3": {
-      "title": "3. Que tu trabajo hable por ti",
+      "title": "Que tu trabajo hable por ti",
       "description": "Tu participación deja ver cómo trabajas y qué sabes hacer. No necesitas esperar a que aparezca una vacante para empezar a darte a conocer."
     },
     "step4": {
-      "title": "4. Aparecen Oportunidades",
+      "title": "Aparecen Oportunidades",
       "description": "Cuando una empresa busca un perfil como el tuyo, puede encontrarte dentro de la comunidad, conocer tu trabajo y ponerse en contacto contigo."
     }
   },
@@ -104,28 +104,44 @@
         "tab": "Desafío",
         "title": "Lanzamiento del desafío",
         "description": "Requerimientos técnicos, diseño base y fecha límite abierta para todos los niveles.",
-        "points": ["Rúbrica de evaluación pública", "Brief y requerimientos claros", "Participación abierta a todos"]
+        "points": [
+          "Rúbrica de evaluación pública",
+          "Brief y requerimientos claros",
+          "Participación abierta a todos"
+        ]
       },
       "step2": {
         "tag": "Fase 02",
         "tab": "Desarrollo",
         "title": "Desarrollo del proyecto",
         "description": "Construyes tu proyecto, resuelves problemas reales y compartes tu repositorio.",
-        "points": ["Libertad en enfoque y estructura del código", "Canales de soporte en Discord", "Entrega mediante repositorio GitHub"]
+        "points": [
+          "Libertad en enfoque y estructura del código",
+          "Canales de soporte en Discord",
+          "Entrega mediante repositorio GitHub"
+        ]
       },
       "step3": {
         "tag": "Fase 03",
         "tab": "Evaluación",
         "title": "Evaluación comunitaria",
         "description": "Revisión comunitaria con métricas claras de código, accesibilidad y diseño.",
-        "points": ["Evaluación con criterios transparentes", "Feedback constructivo entre pares", "Votación abierta comunitaria"]
+        "points": [
+          "Evaluación con criterios transparentes",
+          "Feedback constructivo entre pares",
+          "Votación abierta comunitaria"
+        ]
       },
       "step4": {
         "tag": "Fase 04",
         "tab": "Despliegue",
         "title": "Despliegue en vivo",
         "description": "El proyecto se publica, sumas experiencia real comprobable y destacas en el radar tech.",
-        "points": ["Lanzamiento a producción real", "Proyecto verificado en tu portfolio", "Visibilidad ante empresas del sector"]
+        "points": [
+          "Lanzamiento a producción real",
+          "Proyecto verificado en tu portfolio",
+          "Visibilidad ante empresas del sector"
+        ]
       }
     }
   },

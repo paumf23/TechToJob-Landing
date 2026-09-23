@@ -40,6 +40,12 @@ export async function generateMetadata({
       default: t("title"),
     },
     description: t("description"),
+    icons: {
+      icon: [
+        { url: "/SímboloBlack.svg", type: "image/svg+xml" },
+      ],
+      apple: "/SímboloBlack.svg",
+    },
     openGraph: {
       type: "website",
       locale: locale === "es" ? "es_ES" : "en_US",

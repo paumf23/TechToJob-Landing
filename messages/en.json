@@ -28,19 +28,19 @@
   "howItWorks": {
     "title": "How It Works",
     "step1": {
-      "title": "1. Join the community",
+      "title": "Join the community",
       "description": "Join Discord instantly without registration forms. Explore channels, projects, and conversations that interest you most."
     },
     "step2": {
-      "title": "2. Participate and showcase your skills",
+      "title": "Participate and showcase your skills",
       "description": "Share your projects, solve challenges, join tournaments, and take part in community conversations."
     },
     "step3": {
-      "title": "3. Let your work speak for you",
+      "title": "Let your work speak for you",
       "description": "Your participation showcases how you work and what you can do. You don't need to wait for a job opening to start getting noticed."
     },
     "step4": {
-      "title": "4. Opportunities appear",
+      "title": "Opportunities appear",
       "description": "When a company searches for a profile like yours, they can find you within the community, see your work, and reach out directly."
     }
   },
@@ -104,28 +104,44 @@
         "tab": "Challenge",
         "title": "Challenge Launch",
         "description": "Technical requirements, base design, and clear deadlines open to all skill levels.",
-        "points": ["Public evaluation rubric", "Clear brief and requirements", "Open participation for all"]
+        "points": [
+          "Public evaluation rubric",
+          "Clear brief and requirements",
+          "Open participation for all"
+        ]
       },
       "step2": {
         "tag": "Phase 02",
         "tab": "Development",
         "title": "Project Development",
         "description": "Build your solution, solve real challenges, and submit your project repository.",
-        "points": ["Freedom in code approach and structure", "Support channels on Discord", "Submission via GitHub repo"]
+        "points": [
+          "Freedom in code approach and structure",
+          "Support channels on Discord",
+          "Submission via GitHub repo"
+        ]
       },
       "step3": {
         "tag": "Phase 03",
         "tab": "Evaluation",
         "title": "Community Evaluation",
         "description": "Community review with transparent metrics on code quality, accessibility, and UI.",
-        "points": ["Transparent evaluation criteria", "Constructive peer feedback", "Open community voting"]
+        "points": [
+          "Transparent evaluation criteria",
+          "Constructive peer feedback",
+          "Open community voting"
+        ]
       },
       "step4": {
         "tag": "Phase 04",
         "tab": "Deployment",
         "title": "Live Deployment",
         "description": "The project ships to production, giving you verifiable real-world experience.",
-        "points": ["Real-world production launch", "Verified project on your portfolio", "Visibility with tech companies"]
+        "points": [
+          "Real-world production launch",
+          "Verified project on your portfolio",
+          "Visibility with tech companies"
+        ]
       }
     }
   },

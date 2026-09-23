@@ -47,7 +47,7 @@ body {
 }
 
 .animate-card-glow {
-  animation: card-glow-sweep 3.2s cubic-bezier(0.35, 0, 0.25, 1) forwards;
+  animation: card-glow-sweep 6s cubic-bezier(0.35, 0, 0.25, 1) forwards;
 }
 
 .bg-card-glow {

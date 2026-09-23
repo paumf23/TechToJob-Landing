@@ -101,7 +101,7 @@ function initCanvasNetwork(
         speedY: 0.012 + Math.random() * 0.015,
         ampX: Math.min(18, slotWidth * 0.28),
         ampY: 18,
-        radius: Math.random() * 2 + 13.5, // 13.5px - 15.5px
+        radius: Math.random() * 2 + 15, // 15px - 17px
         theme: i % 3 === 0 ? "dark" : "teal",
         ringPulse: Math.random() * Math.PI * 2,
       });
@@ -170,7 +170,7 @@ function initCanvasNetwork(
     }
 
     // 2. Strict Collision Prevention: Ensure nodes never overlap
-    const MIN_SEPARATION = width < 640 ? 52 : 46;
+    const MIN_SEPARATION = width < 640 ? 56 : 50;
     for (let i = 0; i < positions.length; i++) {
       for (let j = i + 1; j < positions.length; j++) {
         const dx = positions[j].x - positions[i].x;
@@ -246,7 +246,7 @@ function initCanvasNetwork(
       ctx.strokeStyle = ringColor;
       ctx.lineWidth = 1.4;
       ctx.beginPath();
-      ctx.arc(pos.x, pos.y, node.radius + 4.5, 0, Math.PI * 2);
+      ctx.arc(pos.x, pos.y, node.radius + 5, 0, Math.PI * 2);
       ctx.stroke();
 
       // Node background (solid white circle)
@@ -257,30 +257,45 @@ function initCanvasNetwork(
 
       // Node border
       ctx.strokeStyle = primaryColor;
-      ctx.lineWidth = 1.7;
+      ctx.lineWidth = 1.8;
       ctx.beginPath();
       ctx.arc(pos.x, pos.y, node.radius, 0, Math.PI * 2);
       ctx.stroke();
 
-      // Person silhouette icon
-      const scale = node.radius * 0.52;
+      // Person silhouette icon (larger, clearly visible, and unmistakable)
+      const scale = node.radius * 0.72;
       ctx.fillStyle = primaryColor;
 
       // Head
+      const headRadius = scale * 0.36;
       ctx.beginPath();
-      ctx.arc(pos.x, pos.y - scale * 0.34, scale * 0.36, 0, Math.PI * 2);
+      ctx.arc(pos.x, pos.y - scale * 0.30, headRadius, 0, Math.PI * 2);
       ctx.fill();
 
       // Torso / shoulders
       ctx.beginPath();
-      ctx.arc(
+      const shoulderW = scale * 0.80;
+      const bodyBottom = pos.y + scale * 0.72;
+      const bodyTop = pos.y + scale * 0.16;
+
+      ctx.moveTo(pos.x - shoulderW, bodyBottom);
+      ctx.bezierCurveTo(
+        pos.x - shoulderW,
+        bodyTop + scale * 0.08,
+        pos.x - scale * 0.28,
+        bodyTop,
         pos.x,
-        pos.y + scale * 0.8,
-        scale * 0.68,
-        Math.PI * 1.18,
-        Math.PI * 1.82,
-        false
+        bodyTop
       );
+      ctx.bezierCurveTo(
+        pos.x + scale * 0.28,
+        bodyTop,
+        pos.x + shoulderW,
+        bodyTop + scale * 0.08,
+        pos.x + shoulderW,
+        bodyBottom
+      );
+      ctx.closePath();
       ctx.fill();
     }
 
