@@ -27,6 +27,25 @@
   },
   "howItWorks": {
     "title": "Cómo Funciona",
+    "subtitle": "Un camino claro, directo y sin intermediarios. Olvídate de enviar currículums al vacío: aquí construyes proyectos reales, colaboras con otros desarrolladores y dejas que tu código demuestre tu verdadero talento.",
+    "timeline": {
+      "step1": {
+        "time": "Paso 01 · Inicio",
+        "milestone": "Ingreso directo"
+      },
+      "step2": {
+        "time": "Paso 02 · Acción",
+        "milestone": "Retos y torneos"
+      },
+      "step3": {
+        "time": "Paso 03 · Prueba",
+        "milestone": "Código comprobable"
+      },
+      "step4": {
+        "time": "Paso 04 · Radar",
+        "milestone": "Conexión tech"
+      }
+    },
     "step1": {
       "title": "Entra a la comunidad",
       "description": "Únete al Discord al instante sin formularios de registro. Conoce los canales, proyectos y conversaciones que más te interesan."
@@ -42,7 +61,9 @@
     "step4": {
       "title": "Aparecen Oportunidades",
       "description": "Cuando una empresa busca un perfil como el tuyo, puede encontrarte dentro de la comunidad, conocer tu trabajo y ponerse en contacto contigo."
-    }
+    },
+    "bottomText": "Cada proyecto que construyes y cada desafío que completas se convierte en evidencia concreta de tu capacidad técnica. Aquí no compites en soledad: recibes feedback genuino, aprendes en comunidad y ganas la visibilidad que un currículum estático nunca te dará.",
+    "ctaQuestion": "¿Listo para demostrar lo que realmente sabes hacer y sumarte a nuestra comunidad en Discord?"
   },
   "talentAndCompanies": {
     "talent": {
@@ -226,7 +247,10 @@
   },
   "newsSection": {
     "title": "Noticias",
-    "subtitle": "Novedades, artículos y aprendizajes de nuestra comunidad y el ecosistema tech",
+    "subtitle": "Novedades, artículos y aprendizajes de nuestra comunidad y el ecosistema tech. Historias reales de desarrollo, el detrás de escena de nuestros torneos y las claves para impulsar tu talento con proyectos que hablan por sí solos.",
+    "featuredBadge": "Proyecto Ganador · Torneo #02",
+    "readMore": "Leer historia completa",
+    "readTime": "3 min de lectura",
     "items": {
       "item1": {
         "tag": "1. Comunidad — Septiembre 2026",

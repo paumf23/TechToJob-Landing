@@ -27,6 +27,25 @@
   },
   "howItWorks": {
     "title": "How It Works",
+    "subtitle": "A clear, direct, and transparent journey. Forget about sending resumes into the void: here you build real projects, collaborate with fellow developers, and let your code showcase your true talent.",
+    "timeline": {
+      "step1": {
+        "time": "Step 01 · Start",
+        "milestone": "Direct access"
+      },
+      "step2": {
+        "time": "Step 02 · Action",
+        "milestone": "Challenges & tournaments"
+      },
+      "step3": {
+        "time": "Step 03 · Proof",
+        "milestone": "Verified code"
+      },
+      "step4": {
+        "time": "Step 04 · Radar",
+        "milestone": "Tech connection"
+      }
+    },
     "step1": {
       "title": "Join the community",
       "description": "Join Discord instantly without registration forms. Explore channels, projects, and conversations that interest you most."
@@ -42,7 +61,9 @@
     "step4": {
       "title": "Opportunities appear",
       "description": "When a company searches for a profile like yours, they can find you within the community, see your work, and reach out directly."
-    }
+    },
+    "bottomText": "Every project you ship and challenge you complete turns into tangible proof of your technical ability. You don't compete alone here: receive genuine feedback, learn with the community, and gain the visibility a static resume can never offer.",
+    "ctaQuestion": "Ready to showcase what you can really do and join our Discord community?"
   },
   "talentAndCompanies": {
     "talent": {
@@ -226,7 +247,10 @@
   },
   "newsSection": {
     "title": "News",
-    "subtitle": "Updates, articles, and insights from our community and the tech ecosystem",
+    "subtitle": "Updates, articles, and insights from our community and the tech ecosystem. Real development stories, behind-the-scenes tournament highlights, and key tips to boost your talent with projects that speak for themselves.",
+    "featuredBadge": "Winning Project · Tournament #02",
+    "readMore": "Read full story",
+    "readTime": "3 min read",
     "items": {
       "item1": {
         "tag": "1. Community — September 2026",
