@@ -54,11 +54,11 @@ export default function HowItWorks() {
           </p>
         </div>
 
-        {/* Temporal Trajectory Line (Línea de trayecto temporal sobre las cards) */}
-        <div className="relative mt-12 mb-8 sm:mt-14 sm:mb-10 lg:mt-16 lg:mb-12">
+        {/* Desktop-only Temporal Trajectory Line (Visible on lg and above) */}
+        <div className="hidden lg:block relative mt-14 mb-12">
           {/* Continuous gradient connector bar on desktop */}
           <div
-            className="hidden lg:block absolute top-6 left-[12.5%] right-[12.5%] h-0.5 bg-gradient-to-r from-teal/30 via-teal to-teal/30"
+            className="absolute top-6 left-[12.5%] right-[12.5%] h-0.5 bg-gradient-to-r from-teal/30 via-teal to-teal/30"
             aria-hidden="true"
           >
             {/* Animated glowing streak along the trajectory */}
@@ -66,10 +66,10 @@ export default function HowItWorks() {
           </div>
 
           {/* 4 Milestones aligned with the 4 columns below */}
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-4 lg:gap-6">
+          <div className="grid grid-cols-4 gap-6">
             {STEPS.map((stepKey, index) => (
               <div
-                key={`timeline-${stepKey}`}
+                key={`desktop-timeline-${stepKey}`}
                 className="group relative flex flex-col items-center text-center"
               >
                 {/* Milestone Node */}
@@ -98,7 +98,7 @@ export default function HowItWorks() {
 
                 {/* Downward indicator pointing to card below on desktop */}
                 <div
-                  className="hidden lg:flex mt-3 items-center justify-center text-teal/40 opacity-30 transition-all duration-300 group-hover:text-teal-dark group-hover:opacity-100 group-hover:scale-125"
+                  className="mt-3 flex items-center justify-center text-teal/40 opacity-30 transition-all duration-300 group-hover:scale-125 group-hover:text-teal-dark group-hover:opacity-100"
                   aria-hidden="true"
                 >
                   <svg
@@ -120,39 +120,84 @@ export default function HowItWorks() {
           </div>
         </div>
 
-        {/* 4 Cards Grid */}
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
-          {STEPS.map((stepKey) => {
+        {/* Cards Grid: on mobile/tablet (< lg) each card has its milestone header directly above it */}
+        <div className="mt-10 sm:mt-12 lg:mt-0 grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-8 lg:grid-cols-4 lg:gap-6">
+          {STEPS.map((stepKey, index) => {
             return (
-              <article
-                key={stepKey}
-                className={`relative flex flex-col items-center overflow-hidden rounded-2xl border border-white/15 bg-dark p-6 text-center shadow-xl transition-all duration-700 ease-out sm:p-7 ${
-                  cardsVisible
-                    ? "translate-y-0 opacity-100 scale-100"
-                    : "translate-y-8 opacity-0 scale-95 pointer-events-none"
-                }`}
-                style={{ isolation: "isolate" }}
-              >
-                {/* Thick diffused diagonal glow sweep */}
-                {cardsVisible && (
-                  <div
-                    key={`glow-${stepKey}`}
-                    className="pointer-events-none absolute inset-0 z-20 overflow-hidden rounded-2xl mix-blend-screen"
-                    aria-hidden="true"
-                  >
-                    <div className="animate-card-glow absolute -inset-[100%] bg-card-glow blur-md" />
+              <div key={stepKey} className="flex flex-col">
+                {/* Mobile / Tablet Milestone Header (< lg) */}
+                <div className="lg:hidden mb-3.5 flex flex-col items-center text-center">
+                  {/* Milestone Node */}
+                  <div className="relative z-10 flex h-11 w-11 items-center justify-center rounded-full border-2 border-teal bg-white shadow-md">
+                    <span className="font-mono text-sm font-bold text-teal">
+                      0{index + 1}
+                    </span>
+                    <span className="absolute -top-0.5 -right-0.5 flex h-2.5 w-2.5">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal opacity-75" />
+                      <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-teal" />
+                    </span>
                   </div>
-                )}
 
-                <div className="relative z-10 flex flex-col items-center">
-                  <h3 className="text-center text-lg font-bold text-teal md:text-xl">
-                    {t(`${stepKey}.title`)}
-                  </h3>
-                  <p className="mt-3 text-center text-sm leading-relaxed text-gray-200">
-                    {t(`${stepKey}.description`)}
+                  {/* Phase Pill */}
+                  <div className="mt-2">
+                    <span className="inline-block rounded-full bg-teal/10 px-2.5 py-0.5 text-xs font-semibold text-teal tracking-wide">
+                      {t(`timeline.${stepKey}.time`)}
+                    </span>
+                  </div>
+
+                  {/* Milestone Label */}
+                  <p className="mt-1 text-xs font-bold text-dark">
+                    {t(`timeline.${stepKey}.milestone`)}
                   </p>
+
+                  {/* Downward indicator arrow pointing into the card */}
+                  <div className="mt-2 text-teal" aria-hidden="true">
+                    <svg
+                      className="h-5 w-5 animate-bounce"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2.5}
+                        d="M19 14l-7 7m0 0l-7-7m7 7V3"
+                      />
+                    </svg>
+                  </div>
                 </div>
-              </article>
+
+                {/* Card Article */}
+                <article
+                  className={`relative flex flex-1 flex-col items-center overflow-hidden rounded-2xl border border-white/15 bg-dark p-6 text-center shadow-xl transition-all duration-700 ease-out sm:p-7 ${
+                    cardsVisible
+                      ? "translate-y-0 opacity-100 scale-100"
+                      : "translate-y-8 opacity-0 scale-95 pointer-events-none"
+                  }`}
+                  style={{ isolation: "isolate" }}
+                >
+                  {/* Thick diffused diagonal glow sweep */}
+                  {cardsVisible && (
+                    <div
+                      key={`glow-${stepKey}`}
+                      className="pointer-events-none absolute inset-0 z-20 overflow-hidden rounded-2xl mix-blend-screen"
+                      aria-hidden="true"
+                    >
+                      <div className="animate-card-glow absolute -inset-[100%] bg-card-glow blur-md" />
+                    </div>
+                  )}
+
+                  <div className="relative z-10 flex flex-col items-center">
+                    <h3 className="text-center text-lg font-bold text-teal md:text-xl">
+                      {t(`${stepKey}.title`)}
+                    </h3>
+                    <p className="mt-3 text-center text-sm leading-relaxed text-gray-200">
+                      {t(`${stepKey}.description`)}
+                    </p>
+                  </div>
+                </article>
+              </div>
             );
           })}
         </div>
